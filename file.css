@@ -1,0 +1,86 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+body{
+    background-color: #1d232c;
+    text-align:center;
+    font-family: 'Poppins', sans-serif;
+}
+.game-container{
+    height:60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+
+}
+.game-box{
+    height:60vmin;
+    width:60vmin;
+    gap:1.3vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height:17vmin;
+    width:17vmin;
+    background-color:thistle;
+    border-radius:10px;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    font-size: 9.5vmin;
+    color:rgba(39, 3, 27, 0.814);
+
+}
+.reset-button{
+    padding:15px;
+    font-size: medium;
+    background-color: rgba(39, 3, 27, 0.814);
+    color: rgba(255, 255, 255, 0.845);
+    border-radius: 10px;
+    border:none;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 5px;
+}
+.new-button{
+    padding:17px;
+    font-size: medium;
+    background-color: rgba(39, 3, 27, 0.814);
+    color: rgba(255, 255, 255, 0.845);
+    border-radius: 10px;
+    border:none;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+
+}
+.result{
+    color: rgba(255, 255, 255, 0.845);
+    font-size: 25px;
+
+}
+.result-container{
+    height: 20vmin;
+}
+@media screen and (max-width: 600px) {
+    .game-box {
+        height: 70vmin;
+        width: 70vmin;
+    }
+
+    .box {
+        height: 20vmin;
+        width: 20vmin;
+        font-size: 12vmin;
+    }
+
+    .reset-button,
+    .new-button {
+        padding: 8px;
+        font-size: 20px;
+        margin-top: 5px;
+    }
+}
